@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineScope - Movie Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="home">
+    <h1>Cine<span>Scope</span></h1>
+    <p>Your guide to Tamil, English, Malayalam &amp; Telugu cinema</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#upcoming">Upcoming</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu">
+    <span>Languages:</span>
+    <button class="active" onclick="filterMovies('All', this)">All</button>
+    <button onclick="filterMovies('Tamil', this)">Tamil</button>
+    <button onclick="filterMovies('English', this)">English</button>
+    <button onclick="filterMovies('Malayalam', this)">Malayalam</button>
+    <button onclick="filterMovies('Telugu', this)">Telugu</button>
+  </div>
+
+  <main>
+    <section id="movies">
+      <h2>Popular Movies</h2>
+      <div class="movie-grid">
+        <div class="movie-card" data-lang="Tamil">
+          <div class="poster p1">Vikram</div>
+          <div class="info"><h3>Vikram</h3><p class="lang">Tamil</p><p class="rating">&#9733; 8.4 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="Tamil">
+          <div class="poster p2">Super Deluxe</div>
+          <div class="info"><h3>Super Deluxe</h3><p class="lang">Tamil</p><p class="rating">&#9733; 8.4 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="English">
+          <div class="poster p3">Inception</div>
+          <div class="info"><h3>Inception</h3><p class="lang">English</p><p class="rating">&#9733; 8.8 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="English">
+          <div class="poster p4">Interstellar</div>
+          <div class="info"><h3>Interstellar</h3><p class="lang">English</p><p class="rating">&#9733; 8.7 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="Malayalam">
+          <div class="poster p5">Drishyam</div>
+          <div class="info"><h3>Drishyam</h3><p class="lang">Malayalam</p><p class="rating">&#9733; 8.2 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="Malayalam">
+          <div class="poster p6">Manjummel Boys</div>
+          <div class="info"><h3>Manjummel Boys</h3><p class="lang">Malayalam</p><p class="rating">&#9733; 8.3 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="Telugu">
+          <div class="poster p7">RRR</div>
+          <div class="info"><h3>RRR</h3><p class="lang">Telugu</p><p class="rating">&#9733; 7.8 / 10</p></div>
+        </div>
+        <div class="movie-card" data-lang="Telugu">
+          <div class="poster p8">Baahubali 2</div>
+          <div class="info"><h3>Baahubali 2</h3><p class="lang">Telugu</p><p class="rating">&#9733; 8.2 / 10</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Latest Movie Reviews</h2>
+
+      <div class="review">
+        <h3>Vikram (Tamil)</h3>
+        <p class="meta">Reviewed by Arun &middot; 10 Nov 2026</p>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+        <p>A stylish, high-energy action thriller with strong performances and a gripping second half.</p>
+      </div>
+
+      <div class="review">
+        <h3>Interstellar (English)</h3>
+        <p class="meta">Reviewed by Priya &middot; 8 Nov 2026</p>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p>A visually stunning space epic with an emotional core and a memorable father-daughter story.</p>
+      </div>
+
+      <div class="review">
+        <h3>Drishyam (Malayalam)</h3>
+        <p class="meta">Reviewed by Rahul &middot; 5 Nov 2026</p>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+        <p>A smart family thriller where clever writing beats big action. It keeps you guessing till the end.</p>
+      </div>
+
+      <div class="review">
+        <h3>RRR (Telugu)</h3>
+        <p class="meta">Reviewed by Divya &middot; 2 Nov 2026</p>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+        <p>A larger-than-life spectacle about friendship and courage, with grand action and superb music.</p>
+      </div>
+    </section>
+
+    <section id="upcoming">
+      <h2>Upcoming Releases</h2>
+      <p>Stay tuned! New Tamil, English, Malayalam and Telugu releases will be announced here soon.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p><strong>CineScope</strong> &ndash; Honest movie reviews and ratings.</p>
+    <p>Email: <a href="mailto:contact@cinescope.com">contact@cinescope.com</a> &middot; Phone: +91 98765 43210</p>
+    <p>Coimbatore, Tamil Nadu, India</p>
+    <p>&copy; 2026 CineScope. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
